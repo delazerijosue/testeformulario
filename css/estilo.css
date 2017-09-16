@@ -1,0 +1,52 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+h1{
+	text-align:center;
+	color:#00bfff;
+}
+
+h2 {
+text-align:center
+}
+
+#menu{
+	background-color:#4682b4;
+	padding:10px 0;
+	text-align:center;
+}
+#menu a{
+	color:#fff;
+	text-decoration:none;
+}
+#menu a:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+input[type=text],input[type=email],select{
+	width:100%;
+	padding:10px;
+}
+input[type=submit]{
+	padding:10px 30px;
+	cursor:pointer;
+}
+textarea{
+	width:100%;
+	padding:10px;
+	height:100px;
+}
+
+#menumobile {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-left: 45%;
+	margin-right: 45%;
+}
+
+#mobilemenuitens {
+	padding-bottom: 40px;
+}

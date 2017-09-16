@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Entre em Contato Conosco</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/unsemantic-grid-responsive-no-ie7.css">
+    <link rel="stylesheet" href="css/estilo.css">
+		<link rel="icon" href="favicon.png">
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<div class="grid-30 mobile-grid-100">
+				<a href="index.html"><img src="img/logo-horizontal.jpg" width="100%" alt="logotipo da univates"></a>
+			</div>
+			<div class="grid-70 mobile-grid-100">
+				<h1>Entre em Contato Conosco</h1>
+			</div>
+
+			<div id="menu" class="grid-100">
+				<div class="grid-20"><a href="administracao.html">Administração</a></div>
+				<div class="grid-20"><a href="informatica.html">Informática</a></div>
+				<div class="grid-20"><a href="eletroeletronica.html">Eletroeletrônica</a></div>
+				<div class="grid-20"><a href="automacao.html">Automação</a></div>
+				<div class="grid-20"><a href="contato.html">Entre em Contato</a></div>
+			</div>
+
+
+			<div class="grid-100">
+				<h2>Entre em Contato Conosco</h2>
+
+				<form name="frmContato" method="post" action="https://formspree.io/tiagogossmann@universo.univates.br" onsubmit="return validarFormulario()">
+
+				<input type="hidden" name="_subject" value="CONTATO RECEBIDO PELO SITE">
+				<input type="hidden" name="_language" value="pt">
+				<input type="hidden" name="_next" value="https://formteste.000webhostapp.com/obrigado.html">
+
+				<div class="grid-50 mobile-grid-100">
+				<p>Nome:<br>
+				<input type="text" name="nome" maxlength="50" autofocus="autofocus"></p>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="grid-50 mobile-grid-100">
+				<p>CPF:<br>
+				<input id="cpf" type="text" name="cpf">
+				<!--<input id="cpf" type="number" name="cpf" maxlength="11">-->
+				</p>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="grid-50 mobile-grid-100">
+				<p>Assunto:<br>
+				<input type="text" name="assunto" maxlength="100"></p>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="grid-50 mobile-grid-100">
+				<p>Setor:<br>
+				<select name="setor">
+					<option name="Vendas">Vendas</option>
+					<option name="Financeiro">Financeiro</option>
+					<option name="Direção">Direção</option>
+				</select></p>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="grid-50 mobile-grid-100">
+				<p>E-mail:<br>
+				<input type="email" name="email" maxlength="100"></p>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="grid-50 mobile-grid-100">
+				<p>Telefone:<br>
+				<input id="telefone" type="text" name="telefone" maxlength="20"></p>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="grid-50 mobile-grid-100">
+				<p>Mensagem:<br>
+				<textarea name="mensagem"></textarea>
+				</p>
+				</div>
+
+				<div class="grid-100">
+				<p><input type="submit" value="Enviar"></p>
+				</div>
+
+				</form>
+			</div>
+
+
+		</div>
+		<script src="js/site.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery.mask.min.js"></script>
+
+		<script>
+		$(function() {
+			$('#telefone').mask('(99)99999-9999');
+			$('#cpf').mask('999.999.999-99');
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Cursos Técnicos da Univates</title>
+		<meta name="description">Os cursos técnicos da Univates são top</meta>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/unsemantic-grid-responsive-no-ie7.css">
+    <link rel="stylesheet" href="css/estilo.css">
+		<link rel="icon" href="favicon.png">
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<div id="menumobile" class="grid-100 hide-on-desktop">
+				<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+			</div>
+
+			<div id="mobilemenuitens" class="grid-100 hide-on-desktop" style="display: none">
+				<h2 <a href="administracao.html">Administração</a></h2>
+				<h2 <a href="informatica.html">Informática</a></h2>
+				<h2 <a href="eletroeletronica.html">Eletroeletrônica</a></h2>
+				<h2 <a href="automacao.html">Automação</a></h2>
+				<h2 <a href="contato.html">Entre em Contato</a></h2>
+			</div>
+
+			<div class="grid-30 mobile-grid-100">
+				<a href="index.html"><img src="img/logo-horizontal.jpg" width="100%" alt="logotipo da univates"></a>
+			</div>
+
+			<div class="grid-70 mobile-grid-100">
+				<h1>Cursos Técnicos</h1>
+			</div>
+
+			<div id="menu" class="grid-100 hide-on-mobile">
+				<div class="grid-20"><a href="administracao.html">Administração</a></div>
+				<div class="grid-20"><a href="informatica.html">Informática</a></div>
+				<div class="grid-20"><a href="eletroeletronica.html">Eletroeletrônica</a></div>
+				<div class="grid-20"><a href="automacao.html">Automação</a></div>
+				<div class="grid-20"><a href="contato.html">Entre em Contato</a></div>
+			</div>
+
+			<div class="grid-100">
+				<h2>Escolha um Curso no Menu Superior para Maiores Informações</h2>
+			</div>
+
+			<div class="grid-100">
+				<p>Ou se preferir <a href="contato.html">entre em contato</a> conosco.</p>
+			</div>
+		</div>
+		<script src="js/site.js"></script>
+		<script src="https://use.fontawesome.com/726122adc0.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script>
+			$("#menumobile").click(function() {
+				$("#mobilemenuitens").toggle('slow');
+			})
+		</script>
+	</body>
+</html>
